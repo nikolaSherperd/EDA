@@ -1,16 +1,20 @@
 # EDA
-Project: Titanic Survival Prediction
+    ## Project: Titanic Survival Prediction
 
-This project is a classic machine learning exercise that aims to predict which passengers survived the Titanic shipwreck. Using a dataset of passenger information, we perform data cleaning, feature engineering, and train a predictive model to classify passengers as either 'Survived' or 'Did Not Survive'.
+         This project is a classic machine learning exercise that aims to           predict which passengers survived the Titanic shipwreck. Using a           dataset of passenger information, we perform data cleaning,                feature engineering, and train a predictive model to classify              passengers as either 'Survived' or 'Did Not Survive'.
 
-Data Analysis & Preparation
-The first step in my analysis was to prepare the data for our model. The raw data contained missing values and categorical features that needed to be handled.
+         ---
 
-Handling Missing Values: I filled in the missing Age values with the average age of all passengers. I also filled the missing Embarked values with the most common port of embarkation.
+    ## Data Analysis & Preparation
 
-Feature Conversion: The Sex column, with 'male' and 'female' values, was converted to a numerical representation (0 for male, 1 for female) as machine learning models require numerical input.
 
-One-Hot Encoding: The Embarked column, a categorical feature with three possible values, was transformed using one-hot encoding. This created two new columns (Embarked_Q and Embarked_S) to avoid giving the model a false sense of order.
+         The first step in my analysis was to prepare the data for our              model. The raw data contained missing values and categorical               features that needed to be handled.
+
+    ## Handling Missing Values: I filled in the missing Age values with             the average age of all passengers. I also filled the missing               Embarked values with the most common port of embarkation.
+
+    ## Feature Conversion: The Sex column, with 'male' and 'female'                 values, was converted to a numerical representation (0 for male,           1 for female) as machine learning models require numerical input.
+
+    ## One-Hot Encoding: The Embarked column, a categorical feature with            three possible values, was transformed using one-hot encoding.             This created two new columns (Embarked_Q and Embarked_S) to avoid          giving the model a false sense of order.
 
 Feature Engineering: AgeGroup: To potentially improve my model, i created a new feature called AgeGroup by binning the continuous Age column into four distinct categories: children, teenagers, adults, and seniors.
 
